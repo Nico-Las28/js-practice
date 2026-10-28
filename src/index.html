@@ -9,5 +9,30 @@
 </head>
 <body>
     <h1 class="text-3xl font-bold underline">Whats up?</h1>
+    <ul id="menu-list"></ul>
+    <button id="menu-btn">Menu</button>
+    <nav id="nav" class="hidden">...</nav>
+    <button class="tab">Drinks</button>
+    <button class="tab">Food</button>
+    <button class="tab">Desserts</button>
+
+    <div class="faq">
+        <button class="faq-question">Do you have vegan options?</button>
+        <p class="faq-answer hidden">Yes, oat milk and vegan cakes every day.</p>
+    </div>
+    <div class="faq">
+        <button class="faq-question">Can I reserve a table?</button>
+        <p class="faq-answer hidden">Yes, call us or use the form below.</p>
+    </div>
+
+    <input id="search" placeholder="Search the menu..." class="border p-2" />
+    <div>
+        <h1>Show category</h1>
+        <div class="category">
+            <button class="btn-cat" data-category="all">All</button>
+            <button class="btn-cat" data-category="food">Food</button>
+            <button class="btn-cat" data-category="drink">Drinks</button>
+        </div>
+    </div>
 </body>
 </html>
