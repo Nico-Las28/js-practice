@@ -7,25 +7,20 @@
     <link href="./output.css" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
-<body>
+<body class="bg-rose-200">
+    <header class="bg-rose-300 flex justify-between flex-row-reverse gap-4 p-4 h-20">
+        <button id="menu-btn2" class="inside-block cursor-pointer">☰ Menu</button>
+        <nav id="nav2" class="text-2xl hidden">
+            <a class="px-8 inline-block hover:underline duration-300 transition-transform hover:translate-y-0.5" href="#">Home</a>
+            <a class="px-8 inline-block hover:underline duration-300 transition-transform hover:translate-y-0.5" href="#">Menu</a>
+            <a class="px-8 inline-block hover:underline duration-300 transition-transform hover:translate-y-0.5" href="#">About</a>
+            <a class="px-8 inline-block hover:underline duration-300 transition-transform hover:translate-y-0.5" href="#">Contact</a>
+        </nav>
+        <a href="#" class="text-3xl font-bold">Cafe Nico</a>
+    </header>
+    <input id="search" placeholder="Search the menu..." class="border p-2" />
     <h1 class="text-3xl font-bold underline">Whats up?</h1>
     <ul id="menu-list"></ul>
-    <button id="menu-btn">Menu</button>
-    <nav id="nav" class="hidden">...</nav>
-    <button class="tab">Drinks</button>
-    <button class="tab">Food</button>
-    <button class="tab">Desserts</button>
-
-    <div class="faq">
-        <button class="faq-question">Do you have vegan options?</button>
-        <p class="faq-answer hidden">Yes, oat milk and vegan cakes every day.</p>
-    </div>
-    <div class="faq">
-        <button class="faq-question">Can I reserve a table?</button>
-        <p class="faq-answer hidden">Yes, call us or use the form below.</p>
-    </div>
-
-    <input id="search" placeholder="Search the menu..." class="border p-2" />
     <div>
         <h1>Show category</h1>
         <div class="category">
@@ -33,6 +28,22 @@
             <button class="btn-cat" data-category="food">Food</button>
             <button class="btn-cat" data-category="drink">Drinks</button>
         </div>
+    </div>
+    <div class="fua">
+        <button class="fua-fragen">Welche Öffnungszeiten habt ihr?</button>
+        <p class="fua-antworten hidden text-red-500">Wir haben täglich von 8:00 bis 18:00 Uhr geöffnet.</p>
+    </div>
+    <div class="fua">
+        <button class="fua-fragen">Gibt es auch vegane Optionen?</button>
+        <p class="fua-antworten hidden text-red-500">Ja, wir bieten eine Auswahl an veganen Getränken und Speisen an.</p>
+    </div>
+    <div class="fua">
+        <button class="fua-fragen">Kann man bei euch WLAN nutzen?</button>
+        <p class="fua-antworten hidden text-red-500">Ja, unser WLAN steht allen Gästen kostenlos zur Verfügung.</p>
+    </div>
+    <div class="fua">
+        <button class="fua-fragen">Sind Hunde im Café erlaubt?</button>
+        <p class="fua-antworten hidden text-red-500">Ja, gut erzogene Hunde sind bei uns herzlich willkommen.</p>
     </div>
 </body>
 </html>
